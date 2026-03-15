@@ -58,7 +58,7 @@
       "releaseDate": "2026-03-15",
       "totalSizeMB": 427.8,
       "changelog": "Merged with SmartCMD github.",
-      "isLatest": true,
+      "isLatest": false,
       "parts": [
         {
           "label": "Base Game",
