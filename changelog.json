@@ -1,19 +1,122 @@
 [
     {
-      "version": "v1.2.0",
-      "date": "April 1, 2026",
+      "version": "v1.1.0",
+      "date": "March 15, 2026",
       "sections": [
         {
           "title": "New Features",
           "items": [
-            "Some new thing",
-            "Another new thing"
+            "F2 screenshot support added directly to the game — works in both Vulkan and Classic (D3D11) render
+  backends",
+            "Screenshots are saved as timestamped PNGs to a screenshots/ folder next to the game executable",
+            "Skin wardrobe system — store multiple skins in the launcher and switch between them without re-uploading",
+            "Skin wardrobe supports add, rename, remove, and apply operations with thumbnail previews",
+            "Active skin is indicated with a teal dot in the wardrobe grid",
+            "Removed version/branch overlay text from the top-left corner of the screen",
+            "Screenshots page now correctly reads from the active installation's screenshots folder"
           ]
         },
         {
           "title": "Bug Fixes",
           "items": [
-            "Fixed something"
+            "Fixed launcher options and keybinds not actually applying to the game",
+            "Fixed settings being overwritten by the game on startup — launcher now re-applies settings after the game's
+   initial write",
+            "Fixed keybind display showing wrong key names — now sourced directly from the game's internal key table
+  (A=0..Z=25)",
+            "Fixed number keys 1–9 mapping incorrectly in the keybinds screen",
+            "Fixed launcher reading options.txt from the wrong directory — now uses the active installation path",
+            "Fixed screenshots page using wrong game directory"
+          ]
+        },
+        {
+          "title": "Improvements",
+          "items": [
+            "Keybinds section now correctly appears in the Options page",
+            "Options page shows the exact file path being edited",
+            "Options page has a Reload from disk button",
+            "Launcher keybind table is now authoritative — sourced from stubs.cpp s_keyToVK[]"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "v1.0.1",
+      "date": "March 15, 2026",
+      "sections": [
+        {
+          "title": "New Features",
+          "items": [
+            "Added mod support — mods can now be enabled and disabled from the launcher",
+            "Mods are automatically copied to the game directory on launch",
+            "SkinMod support for custom player skins via mods/customskin.png",
+            "Dynamic Lights mod support for handheld light sources",
+            "Minimap mod support",
+            "WAILA (What Am I Looking At) mod support",
+            "Zoom mod support",
+            "VeinMiner mod support",
+            "TreeMiner mod support",
+            "Offhand mod support",
+            "Litematica mod support for structure placement",
+            "Mod metadata display (name, version, author, description) in the Mods tab"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "v1.0.0",
+      "date": "March 14, 2026",
+      "sections": [
+        {
+          "title": "New Features",
+          "items": [
+            "Full keyboard and mouse support with overhauled input system",
+            "Chat system with paste and text formatting support",
+            "Sensitivity slider now affects mouse sensitivity",
+            "F1 key toggles HUD visibility",
+            "Smooth scrolling in Creative Mode menu",
+            "Fullscreen mode and launch argument for fullscreen",
+            "DPI awareness with auto-detect screen resolution",
+            "Skip tutorial option",
+            "Shift+click for quick item move in inventory",
+            "TAB key opens host options",
+            "Offline player UIDs (uid.dat) for multiplayer save persistence",
+            "LittleBigPlanet Skin Pack added",
+            "Java Edition music tracks"
+          ]
+        },
+        {
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed dangling pointer crash",
+            "Fixed mounted minecarts not persisting across world reloads",
+            "Fixed tamed horses despawning when player moves away",
+            "Fixed DLC map loading/saving and missing chunks",
+            "Fixed Enderman and monster aggro in creative mode",
+            "Fixed bonus chests spawning on world reload",
+            "Fixed HUD incorrectly showing 0 hearts",
+            "Fixed SubEntity hitbox hit detection",
+            "Fixed mouse being pulled to the bottom right corner",
+            "Fixed quiet in-game audio after engine update",
+            "Fixed stained glass wrong colors",
+            "Fixed boat gravity",
+            "Fixed ender dragon hit not turning screen red on left side",
+            "Fixed background stretching in Settings > Graphics menu",
+            "Fixed split screen server joining",
+            "Fixed witch bottle color",
+            "Fixed logo rendering after closing host options",
+            "Fixed gamma breaking the F3 debug menu",
+            "Fixed player save data and username handling",
+            "Fixed exit button sound"
+          ]
+        },
+        {
+          "title": "Performance",
+          "items": [
+            "Chunk loading optimizations",
+            "Removed FPS cap",
+            "VSync disabled by default",
+            "Game-tick input handling with per-frame edge detection"
           ]
         }
       ]
